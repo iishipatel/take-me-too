@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+<img src="logo.png">
+</p>
+  
 
-## Available Scripts
+## Inspiration
+Space travel is something that has always excited and inspired us since childhood. With technological advancements and feasibility in this sector growing, the future in which common people get to experience space is not far. Hence, we can very well look forward to space tourism being a hot business in the upcoming decades. Another huge inspiration for this project has been, **Elon Musk**. We look forward and try to make his vision for **_'Anyone' can move to Mars and beyond_** come true.
 
-In the project directory, you can run:
+## What it does
+Our web-app promotes space tourism. It is a futuristic application which will allow the masses to experience space like never before. Through this application, we connect you to agencies like NASA, ISRO, SpaceX, etc. and learn more about space travel opportunities and packages offered. It's your Booking.com for space travel, with a user-friendly interface to easily access the following services:
+- 👨‍🚀 Space Experiences (e.g. Moon Walk, Space Jump)
+- 🚀 Flights to the Expanse (e.g. Moon, ISS)
+- 🪐 Stays in the Outer Space
 
-### `yarn start`
+## How we built it
+Our web - app is based on reactJS frontend and node.js backend. Firebase is used for user authentication and data storage. Google maps-moon API was used to display the exact locations of the place of stay at the moon. The google maps API was mounted upon NASA's API. We made use of it to retrieve launch information and other details as well. We have integrated a virtual assistant **Dr. Luna**👩‍🚀, to help users navigate throughout the website without any trouble. This virtual assistant is powered with Dialogflow.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Challenges we ran into
+The most challenging part was to use the google maps - moon API. Since it's not something people work with every now and then, we couldn't find any good resources or documentation to get desired results. But thank god of NASA's moon trek embeds. This is built using google maps and NASA's information that gave us the most optimum solution to our problem.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+On the whole, this idea depends on future advancement in space tourism, which, in the current scenario is decades away. There have been a lot of hypothetical assumptions made during this project. But that's the beauty that technology covers. It makes us prepared for the future. 
 
-### `yarn test`
+## Accomplishments that we're proud of
+We proudly present you version 1 of our website. We never thought we will be able to pull off the whole prototype of our idea. We hope space travel becomes open to all and this website helps you to book your dream vacation. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What we learned
+Through this hack, we got the opportunity to learn a lot of technologies. Key points are:
+- 💻 React JS and its various libraries
+- 🗺 Google Maps API and NASA API integration
+- 👩‍🚀 Chatbot Development through Dialogflow
+- 👩🏽‍🤝‍🧑🏻 Team Work
+- ⏱ Working on a deadline
+- ✨ most importantly **SO MUCH ABOUT SPACE**
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## What's next for Take Me Too
+With advancement in space technology, the day is not far where more options and features will be added to our website. As we uncover the universe more, opportunities to explore also increase. And for that you will always have takemetoo.space to reach out and fulfill your inter galactic dreams and aspirations.
