@@ -1,4 +1,7 @@
-<centre>![img](img.png)</centre>
+<p align="center">
+<img src="logo.png">
+</p>
+  
 
 ## Inspiration
 Space travel is something that has always excited and inspired us since childhood. With technological advancements and feasibility in this sector growing, the future in which common people get to experience space is not far. Hence, we can very well look forward to space tourism being a hot business in the upcoming decades. Another huge inspiration for this project has been, **Elon Musk**. We look forward and try to make his vision for **_'Anyone' can move to Mars and beyond_** come true.
