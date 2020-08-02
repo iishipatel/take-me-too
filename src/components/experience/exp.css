@@ -1,0 +1,80 @@
+.cflexx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:6px ;
+    border: 1.5px solid #ffd700;
+    border-radius: 16px;
+    width: 260px;
+    height: 350px;
+    background-color: rgba(0,0,0,0.75);
+    transition: 0.2s;
+}
+.cflexx:hover{
+ background-color: rgba(0,0,0,0.009);
+ border: 2.5px solid #ffd700;
+
+
+}
+.cool{
+    text-decoration: none;
+    color:white;
+    transition:0.2s
+}
+
+.cool:hover{
+    text-decoration: none;
+    color:white;
+}
+.cardimg1{
+    height: 80px;
+    width: 80px;
+    /* margin-left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+.ylotext,.h4u{
+    color: #ffd700;
+}
+
+.h4u{
+    margin-right: 100%;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.h4uu{
+    font-weight: bold;
+    font-size: 30;
+    /* text-decoration: underline; */
+    /* width:500px; */
+    /* margin-right:1000px */
+}
+
+..react-multi-carousel-dot-list {
+    display: none!important;
+}
+
+.react-multi-carousel-list {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-left: 80px;
+}
+
+.react-multiple-carousel__arrow::before {
+    font-size: 20px;
+    color: #ffd700;
+}
+
+.react-multi-carousel-dot-list {
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: -100px;
+
+}

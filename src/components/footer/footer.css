@@ -1,0 +1,12 @@
+.footer>p{
+    color: #FFD700;
+    bottom:5px;
+    position: relative;
+    left:50%;
+    padding-top: 32px;
+    transform: translateX(-50%);
+}
+
+.heart{
+    color: red !important;
+}

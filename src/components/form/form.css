@@ -1,0 +1,38 @@
+.formflexing{
+    padding:16px 16px;
+    border: 2px solid #FFD700;
+    width: 40%;
+    height: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 40px;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.formflexinput{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.formflexinput>input,.formflexinput>textarea{
+    border:1px solid #FFD700;
+    text-decoration: none;
+    background: transparent;
+    color:#FFD700;
+    border-radius: 30px;
+    padding:8px 8px ;
+    transition: 0.2s;
+}
+
+.formflexinput>input:focus,.formflexinput>textarea:focus{
+    
+    border: 2px solid #ffd700;
+    border-radius: 30px;
+    outline: none;
+}
+
+.ocllr{
+    color:#FFD700;
+    padding-left: 0;
+}

@@ -1,0 +1,24 @@
+.mooncenter{
+    text-align: center;
+    padding: 0 300px;
+    color: #FFD700;
+}
+
+.mflex1{
+    display: flex
+}
+
+.flexbtn{
+    margin-top: 30px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.h3text{
+    width: 190px;
+    
+}
+
+.heh{
+    color: white;
+}

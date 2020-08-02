@@ -1,0 +1,57 @@
+.cardflex1{
+    display: flex;
+    justify-content: space-around;
+    padding:0px 6px;
+    border:1.2px solid #ffd700;
+    border-radius:20px ;
+    margin-bottom: 12px;
+    background-color:rgba(0,0,0,0.65)
+}
+
+.cardflex2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.cardflex2>div{
+    padding: 0;
+}
+.cardflex3{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 9px;
+}
+
+.moonimg{
+    height: 80px;
+    width: 84px;
+    padding-top: 4px;
+    padding-left:10px;
+}
+.whiteshi{
+    color:white
+}
+
+.moreinfo{
+    cursor: pointer;
+}
+
+.moreinfo>a{
+    text-decoration: none;
+    color:white
+}
+
+.fl{
+    display: flex;
+    flex-direction: column;
+    margin:0 320px
+}
+
+.mtwww5{
+    height: 300px;
+    width: 240px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

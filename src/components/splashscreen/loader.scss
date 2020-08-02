@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// Colors
+$glass-blue: #abd0fa;
+$space-blue: #000;
+$grey: grey;
+$white: white;
+
+// Radius
+$radius: 50%;
+
+.loader {
+  
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include flex(row, center, center);
+    @include size(100vw, 100vh);
+  }
+  
+  &__text {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    font-family: "Space Mono", sans-serif;
+    font-size: 20px;
+    color: yellow;
+    z-index: 1;
+  }
+  
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include size(100vw, 100vh);
+    background-color: $space-blue;
+    background-image: url('data:image/svg+xml;utf8,<svg  viewBox="0 0 100 100"      xmlns="http://www.w3.org/2000/svg"><circle opacity="0.5" fill="%23FFFFFF" cx="28.75" cy="22.338" r="0.713"/><circle opacity="0.2" fill="%23FFFFFF" cx="26.75" cy="79.443" r="0.307"/><circle opacity="0.5" fill="%23FFFFFF" cx="50" cy="41.884" r="0.308"/><circle fill="%23FFFFFF" cx="12.883" cy="42.25" r="0.367"/><circle opacity="0.4" fill="%23FFFFFF" cx="80" cy="72.818" r="0.307"/><circle opacity="0.5" fill="%23FFFFFF" cx="55.625" cy="12.375" r="0.308"/><circle opacity="0.2" fill="%23FFFFFF" cx="73.307" cy="89.375" r="0.308"/><circle opacity="0.5" fill="%23FFFFFF" cx="73" cy="53.884" r="0.308"/><circle opacity="0.5" fill="%23FFFFFF" cx="38.875" cy="89.432" r="0.385"/></svg>');
+    background-size: 20rem 20rem;
+    animation: animate--stars 5s linear infinite;
+  }
+}
+
+
+.ufo {
+  
+  &__wrapper {
+    @include flex(column, center, center);
+    margin-top: 100px;
+  }
+  
+  &__body {
+    position: relative;
+    @include flex(row, center, center);
+    @include size(100px, 100px);
+    background-color: $grey;
+    border-radius: $radius;
+    box-shadow: inset -3px -3px 0 rgba(0, 0, 0, 0.2);
+    animation: animate--rotate 0.5s linear infinite;
+    z-index: 1;
+  }
+  
+  &__cockpit {
+    position: absolute;
+    top: calc(50% - 75px);
+    @include size(50px, 50px);
+    background-color: $glass-blue;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 3px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  &__rivet {
+    position: absolute;
+    top: 5px;
+    @include size(12px, 12px);
+    border-radius: $radius;
+    background-color: darken($grey, 20%);
+
+    &:first-child {
+      top: 5px;
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 6px);
+      left: 5px;
+    }
+
+    &:nth-child(3) {
+      top: calc(50% - 6px);
+      right: 5px;
+    }
+
+    &:last-child {
+      top: 83px;
+    }
+  }
+  
+  &__trails-wrapper {
+    @include size(100px, 200px);
+    @include flex(row, center, center);
+    position: relative;
+  }
+  
+  &__trail {
+    @include size(5px, 40px);
+    margin: 0 15px;
+    opacity: 0;
+    filter: blur(1px);
+    background-color: $white;
+    animation: animate--ufo-trails 0.7s linear infinite;
+
+    &:first-child {
+      animation-delay: 0.4s;
+      height: 15px;
+    }
+
+    &:nth-child(2) {
+      height: 40px;
+      width: 7px;
+    }
+
+    &:last-child {
+      animation-delay: 0.2s;
+      height: 19px;
+    }
+  }
+}
+
+
+@keyframes animate--rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate--stars {
+  from {
+    background-position: left 0;
+  }
+  to {
+    background-position: left 60rem;
+  }
+}
+
+@keyframes animate--ufo-trails {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
